@@ -7,8 +7,8 @@ class Toast {
     static func showToast(message : String, font: UIFont, index:Int, controller: UIViewController) {
 
         let toastLabel = UILabel(frame: CGRect(x: 90 , y: 107+index*150 , width: 130, height: 30))
-    toastLabel.backgroundColor = UIColor.green.withAlphaComponent(0.8)
-    toastLabel.textColor = UIColor.black
+    toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+    toastLabel.textColor = UIColor.white
     toastLabel.font = font
     toastLabel.textAlignment = .center;
     toastLabel.text = message
